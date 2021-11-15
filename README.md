@@ -1,17 +1,14 @@
 # mylaptoop
 
-A new App created by CapoStudios
+A new App created by CapoStudios.
 
-## Getting Started
+## Description
 
-This project is a starting point for a Flutter application.
+This App Advises the User Which and Where to Buy various Pieces of Computers.
+The App will be Avaible on the Major Platforms. 
+It's Made with Flutter, a Multi-Platforms Framework created by Google.
+This Project is Under MIT Licence, so You can Collaborate Whenever You Want.
 
-A few resources to get you started if this is your first Flutter project:
+That's All For Now.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-"# mylaptoop" 
+Thanks for Collaboration!
