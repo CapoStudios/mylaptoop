@@ -1,6 +1,6 @@
 # mylaptoop
 
-A new Flutter project.
+A new App created by CapoStudios
 
 ## Getting Started
 
