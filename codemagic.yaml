@@ -1,30 +1,22 @@
 workflows:
-  my-workflow:                # workflow ID
-    name: Ios Workflow    # workflow name displayed in Codemagic UI
-    instance_type: mac_mini   # machine instance type
-    max_build_duration: 60    # build duration in minutes (min 1, max 120)
-    environment:
-      flutter: 2.8.0-3.2.pre
-      xcode: latest
-    cache:
-      cache_paths:
-        - ~/.pub-cache
-    triggering:
-      events:
-        - push
-      branch_patterns:
-        - pattern: '*'
-          include: true
-          source: true
-      cancel_previous_builds: false
+  my-workflow:
     scripts:
-      - name: Build Ios
-        script: - xcodebuild build -workspace "MyXcodeWorkspace.xcworkspace" -scheme "MyScheme" CODE_SIGN_INDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
-        script: flutter build ios --release --no-codesign
-    artifacts:
-      $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
-      $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
-    publishing:
-      email:
-        recipients:
-          - info.capostudios@gmail.com
+      - name: Install dependencies
+        script: npm ci
+      - name: Switch to a specific version of Cordova
+        script: |
+          set -e # exit on first failed command
+          
+          cvm install 9.0.0
+          cvm use 9.0.0
+      - name: Add iOS platform
+        script: |
+          set -e # exit on first failed command
+
+          cordova platform remove ios --nosave
+          cordova platform add ios --confirm --no-interactive --noresources --save
+      - name: Build iOS release
+        script: |
+          set -e # exit on first failed command
+
+          cordova build ios --no-interactive
