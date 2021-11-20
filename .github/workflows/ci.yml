@@ -21,6 +21,7 @@ jobs:
       - run: flutter upgrade
       - run: dart --version
       - run: flutter --version
+      - run: flutter packages pub get
       - run: flutter analyze
       - run: flutter test
 
@@ -40,6 +41,7 @@ jobs:
       - run: flutter upgrade
       - run: dart --version
       - run: flutter --version
+      - run: flutter packages pub get
       - run: flutter pub get
       - run: flutter clean
       - run: flutter build ios --release --no-codesign
@@ -56,6 +58,7 @@ jobs:
       - uses: subosito/flutter-action@v1
         with:
           channel: "stable"
+      - run: flutter packages pub get
       - run: flutter pub get
       - run: flutter clean
       - run: flutter build appbundle
