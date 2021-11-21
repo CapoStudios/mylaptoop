@@ -1,5 +1,7 @@
 # mylaptoop
 
+![alt text](https://github.com/CapoStudios/mylaptoop/blob/main/img/ScreenShotHomePage.jpg)
+
 A new App created by CapoStudios.
 
 ## Description
