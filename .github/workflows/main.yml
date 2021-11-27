@@ -26,7 +26,6 @@ jobs:
           flutter build ios --release --no-codesign
           cd ios
           git config --global user.name "CapoStudios"
-          git config --global user.email "info.capostudios@gmail.com"
           git init
           git remote add origin https://github.com/CapoStudios/mylaptoop.git
           git branch -M main
