@@ -30,6 +30,7 @@ jobs:
         with:
           tag: v1.0.${{ github.run_number }}
           token: ${{ secrets.TOKEN }}
+        artifacts: "build/ios/iphoneos/*"
 
 
 
