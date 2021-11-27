@@ -25,7 +25,13 @@ jobs:
       - run: |
           flutter build ios --release --no-codesign
           cd ios
-          git --version
+          git init
+          git remote add origin https://github.com/CapoStudios/mylaptoop.git
+          git branch -M main
+          git add .
+          git commit -m "Build Ios App"
+          git pull
+          git push -u origin
       - name: Push to Releases
         uses: ncipollo/release-action@v1
         with:
