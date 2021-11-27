@@ -30,7 +30,7 @@ jobs:
           git branch -M main
           git add .
           git commit -m "Build Ios App"
-          git push -u origin
+          git push --set-upstream origin main
       - name: Push to Releases
         uses: ncipollo/release-action@v1
         with:
