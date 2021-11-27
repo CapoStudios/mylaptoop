@@ -20,6 +20,7 @@ jobs:
           java-version: '12.x'
       - uses: subosito/flutter-action@v1
       - uses: actions/upload-artifact@v2
+        path: ios
         with:
           flutter-version: '2.2.0'
       - run: flutter pub get
