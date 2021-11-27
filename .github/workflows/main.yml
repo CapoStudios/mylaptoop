@@ -29,7 +29,7 @@ jobs:
           cd Payload
           ln -s ../Runner.app
           cd ..
-          zip -r app.zip Payload
+          zip -r app Payload
       - name: Push to Releases
         uses: ncipollo/release-action@v1
         with:
