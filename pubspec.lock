@@ -222,7 +222,7 @@ packages:
     source: hosted
     version: "2.0.4"
   petitparser:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
       name: petitparser
       url: "https://pub.dartlang.org"
@@ -332,7 +332,7 @@ packages:
     source: hosted
     version: "0.2.0"
   xml:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
       name: xml
       url: "https://pub.dartlang.org"

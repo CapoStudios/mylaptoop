@@ -24,7 +24,7 @@ jobs:
       - run: flutter pub get
       - run: |
           flutter build ios --release --no-codesign
-          cd ios/iphoneos
+          cd ios
       - name: Push to Releases
         uses: ncipollo/release-action@v1
         with:
