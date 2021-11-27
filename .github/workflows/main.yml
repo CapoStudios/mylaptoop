@@ -22,7 +22,7 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           flutter-version: '2.2.0'
-          path: ios
+          path: Users/runner/work/mylaptoop/mylaptoop/build/ios/iphoneos/Runner.app
       - run: flutter pub get
       - run: |
           flutter build ios --release --no-codesign
