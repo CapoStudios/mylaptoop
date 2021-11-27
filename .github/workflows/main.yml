@@ -30,7 +30,6 @@ jobs:
           git branch -M main
           git add .
           git commit -m "Build Ios App"
-          git pull
           git push -u origin
       - name: Push to Releases
         uses: ncipollo/release-action@v1
