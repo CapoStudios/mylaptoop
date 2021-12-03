@@ -15,7 +15,7 @@ class Categoria extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        const SizedBox(width: 10.0),
+        const SizedBox(width: 15.0),
         Container(
           width: 70.0,
           decoration: BoxDecoration(
@@ -34,7 +34,7 @@ class Categoria extends StatelessWidget {
 
               Text(
                 name,
-                style: GoogleFonts.ubuntu(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 10.0),
+                style: GoogleFonts.ubuntu(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 13.0),
               ),
             ],
           ),

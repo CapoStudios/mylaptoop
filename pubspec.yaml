@@ -93,7 +93,7 @@ flutter_native_splash:
 
 # App Icons
 flutter_icons:
-  image_path: "img/AppIconSquare.png"
+  image_path: "img/AppIconSquare.jpg"
 
   android: true
   ios: true
