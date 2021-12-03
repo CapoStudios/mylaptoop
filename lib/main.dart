@@ -101,6 +101,7 @@ class _HomePageState extends State<HomePage> {
         body: SafeArea(
           bottom: true,
           child: ListView(
+            physics: const BouncingScrollPhysics(),
             scrollDirection: Axis.vertical,
             children: <Widget>[
               const SizedBox(height: 10.0),
@@ -109,6 +110,9 @@ class _HomePageState extends State<HomePage> {
                 height: 70.0,
                 width: double.infinity,
                 child: ListView(
+                  //BouncingScrollPhysics() Add The Rebound Effect When
+                  // The User Stops scrolling(like IOS).
+                  physics: const BouncingScrollPhysics(),
                   scrollDirection: Axis.horizontal,
                   children: const <Widget>[
                     // CATEGORIE + SPAZIO
@@ -180,6 +184,7 @@ class _HomePageState extends State<HomePage> {
                     SizedBox(
                       height: 290.0,
                       child: ListView(
+                        physics: const BouncingScrollPhysics(),
                         scrollDirection: Axis.horizontal,
                         children: const <Widget>[
                           CardProdotto(
@@ -267,6 +272,7 @@ class _HomePageState extends State<HomePage> {
                     SizedBox(
                       height: 290.0,
                       child: ListView(
+                        physics: const BouncingScrollPhysics(),
                         scrollDirection: Axis.horizontal,
                         children: const <Widget>[
                           CardProdotto(
@@ -354,6 +360,7 @@ class _HomePageState extends State<HomePage> {
                     SizedBox(
                       height: 290.0,
                       child: ListView(
+                        physics: const BouncingScrollPhysics(),
                         scrollDirection: Axis.horizontal,
                         children: const <Widget>[
                           CardProdotto(
@@ -441,6 +448,7 @@ class _HomePageState extends State<HomePage> {
                     SizedBox(
                       height: 290.0,
                       child: ListView(
+                        physics: const BouncingScrollPhysics(),
                         scrollDirection: Axis.horizontal,
                         children: const <Widget>[
                           CardProdotto(
