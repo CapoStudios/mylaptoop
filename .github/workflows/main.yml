@@ -22,12 +22,7 @@ jobs:
         with:
           flutter-version: '2.2.0'
       - run: flutter pub get
-<<<<<<< HEAD
-      - run: flutter test
-      - run: flutter build apk --debug --split-per-abi
-=======
       - run: flutter build apk 
->>>>>>> dc741f81b57f27c62d7a8bf632a8425bbfda56c1
       - run: |
           flutter build ios --no-codesign
           cd build/ios/iphoneos
@@ -39,19 +34,11 @@ jobs:
       - name: Push to Releases
         uses: ncipollo/release-action@v1
         with:
-<<<<<<< HEAD
-          artifacts: "build/app/outputs/apk/debug/*,build/ios/iphoneos/app.ipa"
-=======
           artifacts: "build/app/outputs/flutter-apk/app-release.apk,build/ios/iphoneos/app.ipa"
->>>>>>> dc741f81b57f27c62d7a8bf632a8425bbfda56c1
           tag: v1.0.${{ github.run_number }}
           token: ${{ secrets.TOKEN }}
 
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> dc741f81b57f27c62d7a8bf632a8425bbfda56c1
 # push to master, main, develop
 # pull request on main master
