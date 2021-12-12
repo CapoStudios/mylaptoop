@@ -63,7 +63,7 @@ class _HomeState extends State<Home> {
         ),
     
         //Body
-        body: body: SafeArea(
+        body: SafeArea(
           bottom: true,
           child: ListView(
             scrollDirection: Axis.vertical,
