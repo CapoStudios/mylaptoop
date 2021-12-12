@@ -66,6 +66,7 @@ class _HomeState extends State<Home> {
         body: SafeArea(
           bottom: true,
           child: ListView(
+	    physics: const BouncingScrollPhysics(),
             scrollDirection: Axis.vertical,
             children: <Widget>[
               const SizedBox(height: 10.0),
@@ -74,6 +75,7 @@ class _HomeState extends State<Home> {
                 height: 70.0,
                 width: double.infinity,
                 child: ListView(
+		  physics: const BouncingScrollPhysics(),
                   scrollDirection: Axis.horizontal,
                   children: const <Widget>[
                     // CATEGORIE + SPAZIO
@@ -145,6 +147,7 @@ class _HomeState extends State<Home> {
                     SizedBox(
                       height: 290.0,
                       child: ListView(
+			physics: const BouncingScrollPhysics(),
                         scrollDirection: Axis.horizontal,
                         children: const <Widget>[
                           CardProdotto(
@@ -232,6 +235,7 @@ class _HomeState extends State<Home> {
                     SizedBox(
                       height: 290.0,
                       child: ListView(
+			physics: const BouncingScrollPhysics(),
                         scrollDirection: Axis.horizontal,
                         children: const <Widget>[
                           CardProdotto(
@@ -319,6 +323,7 @@ class _HomeState extends State<Home> {
                     SizedBox(
                       height: 290.0,
                       child: ListView(
+			physics: const BouncingScrollPhysics(),
                         scrollDirection: Axis.horizontal,
                         children: const <Widget>[
                           CardProdotto(
@@ -406,6 +411,7 @@ class _HomeState extends State<Home> {
                     SizedBox(
                       height: 290.0,
                       child: ListView(
+			physics: const BouncingScrollPhysics(),
                         scrollDirection: Axis.horizontal,
                         children: const <Widget>[
                           CardProdotto(
