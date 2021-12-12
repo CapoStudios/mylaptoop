@@ -1,13 +1,16 @@
-
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mylaptoop/widgets/widgets.dart';
 
-class Home extends StatelessWidget {
-  const Home({
-    Key? key,
-  }) : super(key: key);
+class Home extends StatefulWidget {
+  const Home({ Key? key }) : super(key: key);
+
+  @override
+  _HomeState createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
@@ -60,10 +63,9 @@ class Home extends StatelessWidget {
         ),
     
         //Body
-        body: SafeArea(
+        body: body: SafeArea(
           bottom: true,
           child: ListView(
-            physics: const BouncingScrollPhysics(),
             scrollDirection: Axis.vertical,
             children: <Widget>[
               const SizedBox(height: 10.0),
@@ -72,9 +74,6 @@ class Home extends StatelessWidget {
                 height: 70.0,
                 width: double.infinity,
                 child: ListView(
-                  //BouncingScrollPhysics() Add The Rebound Effect When
-                  // The User Stops scrolling(like IOS).
-                  physics: const BouncingScrollPhysics(),
                   scrollDirection: Axis.horizontal,
                   children: const <Widget>[
                     // CATEGORIE + SPAZIO
@@ -146,7 +145,6 @@ class Home extends StatelessWidget {
                     SizedBox(
                       height: 290.0,
                       child: ListView(
-                        physics: const BouncingScrollPhysics(),
                         scrollDirection: Axis.horizontal,
                         children: const <Widget>[
                           CardProdotto(
@@ -234,7 +232,6 @@ class Home extends StatelessWidget {
                     SizedBox(
                       height: 290.0,
                       child: ListView(
-                        physics: const BouncingScrollPhysics(),
                         scrollDirection: Axis.horizontal,
                         children: const <Widget>[
                           CardProdotto(
@@ -322,7 +319,6 @@ class Home extends StatelessWidget {
                     SizedBox(
                       height: 290.0,
                       child: ListView(
-                        physics: const BouncingScrollPhysics(),
                         scrollDirection: Axis.horizontal,
                         children: const <Widget>[
                           CardProdotto(
@@ -410,7 +406,6 @@ class Home extends StatelessWidget {
                     SizedBox(
                       height: 290.0,
                       child: ListView(
-                        physics: const BouncingScrollPhysics(),
                         scrollDirection: Axis.horizontal,
                         children: const <Widget>[
                           CardProdotto(

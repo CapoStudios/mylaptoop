@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:mylaptoop/screens/home.dart';
 
 
-void main() {
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   // ignore: deprecated_member_use
   SystemChrome.setEnabledSystemUIOverlays([SystemUiOverlay.bottom, SystemUiOverlay.top]);
@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
       ),
       themeMode: ThemeMode.dark, 
       debugShowCheckedModeBanner: false,
-      home: const HomePage(),
+      home: Home(),
     );
   }
 }
@@ -46,6 +46,6 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Home();
+    return const HomePage();
   }
 }
