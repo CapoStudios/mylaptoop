@@ -14,26 +14,27 @@
     This is a placeholder for base href that will be replaced by the value of
     the `--base-href` argument provided to `flutter build`.
   -->
-
+<<<<<<< HEAD
+=======
   <!--<base href="/">-->
-
+>>>>>>> 068c75aa629135b3dc817cf83eed969a046757ad
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="MyLaptoop Web Version">
+  <meta name="description" content="A new Flutter project.">
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="mylaptoop">
-  <link rel="apple-touch-icon" href="https://github.com/CapoStudios/mylaptoop/blob/page/icons/Icon-192.png">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="https://github.com/CapoStudios/mylaptoop/blob/page/favicon.png"/>
+  <link rel="icon" type="image/png" href="favicon.png"/>
 
   <title>mylaptoop</title>
-  <link rel="manifest" href="./manifest.json">
-  <link rel="stylesheet" type="text/css" href="https://github.com/CapoStudios/mylaptoop/blob/page/splash/style.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" type="text/css" href="splash/style.css">
 </head>
 <body style="position: fixed; inset: 0px; overflow: hidden; padding: 0px; margin: 0px; user-select: none; touch-action: none; font: 14px sans-serif; color: red;">
   <!-- This script installs service_worker.js to provide PWA functionality to
@@ -48,7 +49,7 @@
       }
       scriptLoaded = true;
       var scriptTag = document.createElement('script');
-      scriptTag.src = 'https://github.com/CapoStudios/mylaptoop/blob/page/main.dart.js';
+      scriptTag.src = 'main.dart.js';
       scriptTag.type = 'application/javascript';
       document.body.append(scriptTag);
     }
@@ -59,7 +60,7 @@
         // Wait for registration to finish before dropping the <script> tag.
         // Otherwise, the browser will load the script multiple times,
         // potentially different versions.
-        var serviceWorkerUrl = 'https://github.com/CapoStudios/mylaptoop/blob/page/flutter_service_worker.js?v=' + serviceWorkerVersion;
+        var serviceWorkerUrl = 'flutter_service_worker.js?v=' + serviceWorkerVersion;
         navigator.serviceWorker.register(serviceWorkerUrl)
           .then((reg) => {
             function waitForActivation(serviceWorker) {
@@ -104,9 +105,9 @@
     }
   </script>
   <picture id="splash">
-    <source srcset="https://github.com/CapoStudios/mylaptoop/tree/page/splash/img/light-1x.png 1x, https://github.com/CapoStudios/mylaptoop/tree/page/splash/img/light-2x.png 2x, https://github.com/CapoStudios/mylaptoop/tree/page/splash/img/light-3x.png 3x, https://github.com/CapoStudios/mylaptoop/tree/page/splash/img/light-4x.png 4x" media="(prefers-color-scheme: light) or (prefers-color-scheme: no-preference)">
-    <source srcset="https://github.com/CapoStudios/mylaptoop/tree/page/splash/img/dark-1x.png 1x, https://github.com/CapoStudios/mylaptoop/tree/page/splash/img/dark-2x.png 2x, https://github.com/CapoStudios/mylaptoop/tree/page/splash/img/dark-3x.png 3x, https://github.com/CapoStudios/mylaptoop/tree/page/splash/img/dark-4x.png 4x" media="(prefers-color-scheme: dark)">
-    <img class="center" src="https://github.com/CapoStudios/mylaptoop/tree/page/splash/img/light-1x.png" />
+    <source srcset="splash/img/light-1x.png 1x, splash/img/light-2x.png 2x, splash/img/light-3x.png 3x, splash/img/light-4x.png 4x" media="(prefers-color-scheme: light) or (prefers-color-scheme: no-preference)">
+    <source srcset="splash/img/dark-1x.png 1x, splash/img/dark-2x.png 2x, splash/img/dark-3x.png 3x, splash/img/dark-4x.png 4x" media="(prefers-color-scheme: dark)">
+    <img class="center" src="splash/img/light-1x.png" />
   </picture>
 </body>
 </html>

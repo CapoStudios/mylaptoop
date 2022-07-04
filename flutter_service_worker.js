@@ -114,10 +114,10 @@ const RESOURCES = {
 // The application shell files that are downloaded before a service worker can
 // start.
 const CORE = [
-  "https://github.com/CapoStudios/mylaptoop/blob/page/main.dart.js",
-"https://github.com/CapoStudios/mylaptoop/blob/page/index.html",
-"https://github.com/CapoStudios/mylaptoop/blob/page/assets/AssetManifest.json",
-"https://github.com/CapoStudios/mylaptoop/blob/page/assets/FontManifest.json"];
+  "main.dart.js",
+"index.html",
+"assets/AssetManifest.json",
+"assets/FontManifest.json"];
 // During install, the TEMP cache is populated with the application shell files.
 self.addEventListener("install", (event) => {
   self.skipWaiting();
